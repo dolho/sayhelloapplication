@@ -1,0 +1,40 @@
+.center-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: gray;
+}
+
+.central-container {
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.error-message {
+    align-content: center;
+    padding: 5% 0;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+.form-element {
+    padding: 5px 0;
+}
+
+.first_name, .last_name {
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 5px;
+    width: 100%;
+    font-size: large;
+}
+h2, h4 {
+    text-align: center;
+}
+

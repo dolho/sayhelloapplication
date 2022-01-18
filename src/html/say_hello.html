@@ -1,0 +1,41 @@
+{% extends 'html/layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="container mt-5 p-3 central-container">
+        <div class = "d-flex justify-content-center error-message">
+            <div class="p-2 bd-highlight"> <h2 id="greeting_placeholder"> Напиши своє ім'я та email :3 </h2></div>
+        </div>
+        <div class="m-2 bd-highlight" id="alert"> </div>
+        <div class = "d-flex justify-content-center">
+            
+            <form class="form-horizontal" id="name_form">
+            {% csrf_token %}
+            <div class="control-group my-3 text-center">
+                <div class="controls">
+                    <input class="first_name text-capitalize" type="text" id="first_name" name="first_name"  placeholder="Ім'я"
+                    maxlength="20" pattern="^[a-zA-ZА-Яа-яёЁЇїІіЄєҐґ']+$" title="Only English, 
+                    Russian, Ukranian letters and symbol ' are allowed." required>
+                </div>
+            </div>
+            <div class="control-group my-3 text-center">
+                <div class="controls">
+                    <input class="last_name text-capitalize" type="text" name="last_name" id="last_name" placeholder="Прізвище"
+                    maxlength="20"pattern="^[a-zA-ZА-Яа-яёЁЇїІіЄєҐґ']+$" title="Only English, 
+                    Russian, Ukranian letters and symbol ' are allowed." required>
+                </div>
+            </div>
+            <div class="control-group my-3 text-center">
+                <div class="controls">
+                    <input class="last_name" type="email" name="email" id="Email" placeholder="Email"
+                    maxlength="35" required>
+                </div>
+            </div>
+            <div class="control-group my-3">
+                <div class="controls text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Привітатись</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
