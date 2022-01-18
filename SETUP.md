@@ -9,7 +9,7 @@ cd sayhelloapplication
 ```
 Or download the code as zip file and open the root folder of the project.
 
-2) (Optionally) [Create] (https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/) and start virtual environment
+2) (Optionally) [Create](https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/) and start virtual environment
 
 3) Execute in console 
 ```
