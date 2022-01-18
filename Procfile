@@ -1,1 +1,1 @@
-web: gunicorn  names.wsgi
+web: gunicorn  greeter.wsgi
